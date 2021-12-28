@@ -33,7 +33,7 @@ class Gamecenter::Api
 
   def send_get(url, params = {})
   	params.merge!({ token: token, secret_token: secret_token })
-  	response = RestClient.get url, params
+  	response = RestClient.get url, params: params
   	JSON.parse(response.body)
   end
 end
