@@ -26,14 +26,14 @@ class Gamecenter::Api
   private
 
   def send_post(url, params = {})
-  	new_params = params.merge { token: token, secret_token: secret_token }
-  	response = RestClient.post url, new_params
+  	params.merge! { token: token, secret_token: secret_token }
+  	response = RestClient.post url, params
   	JSON.parse(response.body)
   end
 
   def send_get(url, params = {})
-  	new_params = params.merge { token: token, secret_token: secret_token }
-  	response = RestClient.get url, new_params
+  	params.merge! { token: token, secret_token: secret_token }
+  	response = RestClient.get url, params
   	JSON.parse(response.body)
   end
 end
