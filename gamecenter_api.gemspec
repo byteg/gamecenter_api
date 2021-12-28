@@ -10,6 +10,6 @@ Gem::Specification.new do |s|
     'https://rubygems.org/gems/gamecenter_api'
   s.license       = 'MIT'
 
-  spec.add_runtime_dependency 'rest-client'
-  spec.add_runtime_dependency 'json'
+  s.add_runtime_dependency 'rest-client'
+  s.add_runtime_dependency 'json'
 end
