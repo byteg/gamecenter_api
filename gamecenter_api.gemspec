@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.description = "Ruby API to access gamecenter"
   s.authors     = ["Denis Kuznetsov"]
   s.email       = 'bytecheg@gmail.com'
-  s.files       = ["lib/gamecenter.rb", "lib/gamecenter/api.rb"]
+  s.files       = ["lib/gamecenter_api.rb", "lib/gamecenter_api/client.rb"]
   s.homepage    =
     'https://rubygems.org/gems/gamecenter_api'
   s.license       = 'MIT'

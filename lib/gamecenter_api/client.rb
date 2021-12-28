@@ -1,4 +1,4 @@
-class Gamecenter::Api
+class GamecenterApi::Client
   attr_accessor :token, :secret_token, :base_url
   DEFAULT_BASE_URL = "http://localhost:3000"
   API_PATH = "api/v1"
