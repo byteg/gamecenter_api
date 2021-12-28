@@ -1,1 +1,1 @@
-require File.expand_path('../gamecenter_api/client', __FILE__)
+require './gamecenter_api/client'
