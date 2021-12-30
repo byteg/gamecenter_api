@@ -20,6 +20,10 @@ module GamecenterApi
     	send_get "#{base_url}/#{API_PATH}/game"
     end
 
+    def user_info(user_id)
+      send_get "#{base_url}/#{API_PATH}/users/#{user_id}"
+    end
+
     def send_notification(user_id, content)
     	send_post "#{base_url}/#{API_PATH}/notifications", { user_id: user_id, content: content }
     end
