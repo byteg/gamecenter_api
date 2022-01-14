@@ -12,6 +12,10 @@ module GamecenterApi
     	send_post "#{base_url}/#{API_PATH}/transfers/game2user", { user_id: user_id, amount: amount }
     end
 
+    def game2users(user_ids, amount)
+      send_post "#{base_url}/#{API_PATH}/transfers/game2users", { user_ids: user_ids, amount: amount }
+    end
+
     def user2game(user_id, amount)
     	send_post "#{base_url}/#{API_PATH}/transfers/user2game", { user_id: user_id, amount: amount }
     end
